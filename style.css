@@ -1,0 +1,88 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    display: flex;
+    max-height: 100vh;
+}
+
+.header {
+    position: relative;
+    flex: 0 0 40%;
+    overflow: hidden;
+}
+
+.header > .header-image {
+    width: 100%;
+}
+
+.header > .header-band {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 15%;
+    height: 12%;
+    width: 100%;
+    background: rgb(0, 0, 0, 0.2);
+}
+
+.header-band > img {
+    width: 50%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgb(190, 190, 190);
+}
+
+.about { 
+    padding: 20px 75px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 75px;
+    gap: 20px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.form-row {
+    display: flex;  
+    justify-content: space-evenly;
+}
+
+.form-row > * {
+    width: 100%;
+}
+
+.form-field > * {
+    width: 75%;
+}
+
+.form-button {
+    max-width: 15%;
+    background: lightgreen;
+    padding: 10px;
+    margin: 20px 75px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.redirect {
+    padding: 0px 75px;
+}
